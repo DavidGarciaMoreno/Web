@@ -16,6 +16,39 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.225em;
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.35em;
+  line-height: 1.75em;
+}
+
+section#welcome {
+  background-color: #066d8d;
+	margin: 0 0 3.5em 0;
+  text-align: center;
+}
+
+		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
+			border-bottom: solid 2px #fff;
+			display: inline-block;
+			padding-bottom: 1em;
+			position: relative;
+		}
+
+			header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
+				content: '';
+				display: block;
+				height: 1px;
+			}
+
 /** HEADER **/
 #header-nav {
   background-color: #2e3842;
