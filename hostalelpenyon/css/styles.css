@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'busoramabold'; 
+  src: url('../fonts/busorama-bold-webfont.ttf');
+}
+
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  background: url('../images/penyiscola.jpg'); 
+  background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #2e3842;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('../images/logo.png') no-repeat;
+  width: 83px;
+  height: 60px;
+}
+
+#header-nav{
+  height: 0.9em;
+}
+
+/*.navbar-header {
+  float: none;
+}*/
+
+.navbar-brand a{
+  padding-top: 25px;
+  color: #fff;
+  font-family: 'busoramabold';
+  font-size: 1.4em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/*.navbar-toggle { 
+  display: block; 
+}*/
+
+.navbar .container-fluid, .navbar-collapse {
+  padding-left:0;
+}
+
+/*** FOOTER ***/
+.panel-footer {
+  padding: 6em 0 4em 0;
+  background-color: #1d242a;
+  opacity: 0.9;
+  border-top: 0;
+  height: 16em;
+}
+
+.panel-footer .container {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 0.8em;
+	letter-spacing: 0.225em;
+  line-height: 200%;
+	text-transform: uppercase;
+}
+
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+#hours, #address {
+  line-height: 2;
+}
+
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+
+#testimonials {
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2){
+  margin-top: 25px;
+}
+/*** END FOOTER ***/
+
+/*** Extra small devices ***/
+@media (max-width: 767px) {
+  .navbar-brand a{
+  font-size: 0.7em;
+  letter-spacing: 0.15em;
+  }
+}

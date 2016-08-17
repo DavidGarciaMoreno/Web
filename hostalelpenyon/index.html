@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hostal el Peñón</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="index.html">
+            <div id="logo-img" class="pull-left"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html">El peñón</a>
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
+              <a href="index.html">Inicio</a>
+            </li>            
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();"><br class="hidden-xs">Hostal</a>
+            </li>
+            <li>
+              <a href="#"><br class="hidden-xs">Restaurante</a>
+            </li>
+            <li>
+              <a href="#"><br class="hidden-xs">Servicios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="main-content" class="container"></div> 
+
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="text-center">Para reservas o consulta de tarifas: 964 48 07 16 | 635 53 80 97</div>
+      <div class="text-center">&copy; El Peñón | <a href="http://www.elpenyon.es/aviso">Aviso Legal</a></div>
+      <div class="text-center">Diseño y programación: David García Moreno</div>
+    </div>  
+  </footer>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
