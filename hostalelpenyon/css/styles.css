@@ -1,3 +1,6 @@
+@import url(font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+
 @font-face {
   font-family: 'busoramabold'; 
   src: url('../fonts/busorama-bold-webfont.ttf');
@@ -30,13 +33,42 @@ h2 {
   line-height: 1.75em;
 }
 
-section#welcome {
+#welcome {
   background-color: #066d8d;
-	margin: 0 0 3.5em 0;
   text-align: center;
 }
 
-		header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
+#hostal {
+  background-color: #309191;
+  text-align: center;
+}
+
+#restaurante {
+  background-color: #1792a4;
+  text-align: center;
+}
+
+#reserva {
+  width: 80%;
+  height: 340px;
+  padding: 100px 0 0 0;
+}
+
+#reserva div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#reserva h2 {
+  letter-spacing: 0.225em;
+}
+
+#reserva p {
+  letter-spacing: 0.075em;
+  line-height: 1.6em;
+}
+
+		/*header.major h2, header.major h3, header.major h4, header.major h5, header.major h6 {
 			border-bottom: solid 2px #fff;
 			display: inline-block;
 			padding-bottom: 1em;
@@ -47,7 +79,9 @@ section#welcome {
 				content: '';
 				display: block;
 				height: 1px;
-			}
+			}*/
+
+.penyonfont{ font-family: 'busoramabold'; }
 
 /** HEADER **/
 #header-nav {
@@ -104,38 +138,39 @@ section#welcome {
   line-height: 200%;
 	text-transform: uppercase;
 }
-
-.panel-footer div.row {
-  margin-bottom: 35px;
-}
-
-#hours, #address {
-  line-height: 2;
-}
-
-#hours > span, #address > span {
-  font-size: 1.3em;
-}
-
-#address p {
-  color: #557c3e;
-  font-size: .8em;
-  line-height: 1.8;
-}
-
-#testimonials {
-  font-style: italic;
-}
-
-#testimonials p:nth-child(2){
-  margin-top: 25px;
-}
 /*** END FOOTER ***/
+
+/*** Small devices ***/
+@media (min-width: 768px) and (max-width: 991px) {
+  #reserva {
+    width: 100%;
+    height: 240px;
+    text-align: center;
+  }
+
+  #reserva div {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 /*** Extra small devices ***/
 @media (max-width: 767px) {
   .navbar-brand a{
-  font-size: 0.7em;
-  letter-spacing: 0.15em;
+    font-size: 0.7em;
+    letter-spacing: 0.15em;
+  }
+
+  #reserva {
+    width: 100%;
+    height: 140px;
+    padding: 30px 0 0 0;
+    text-align: center;
+  }
+
+  #reserva div {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.8em;
   }
 }
